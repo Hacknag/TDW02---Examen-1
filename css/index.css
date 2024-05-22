@@ -3,10 +3,7 @@
 *{
     text-align: center;
     color: #fff;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+ 
 
   }
 
@@ -65,20 +62,15 @@
  }
 
   
-  .grid-items2{
-    background-color: #0c0c73;
-    border-radius: 5%;
-    height: 300px;
-    display: grid;
-    align-items: center;
-   
-  }
-  
   /* Seccion 3 */
   .seccion3 {
     background-image: url(../img/Wine2.jpg);
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
     padding: 150px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .seccion3 h2{
@@ -105,36 +97,37 @@
 background: linear-gradient(90deg, rgba(34,13,16,1) 0%, rgba(113,41,51,1) 17%, rgba(113,41,51,1) 83%, rgba(166,60,74,1) 100%);
   }
   
-  
-  
-  
   /* Seccion 5 */
   
   .seccion5{
-    background-image: url(../img/banner3.jpg);
+    background-image: url(../img/Wine3.jpeg);
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
     padding: 150px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .seccion5 h2{
-    font-size: 4.5rem;
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-weight: bolder;
+    font-size: 6rem;
     text-align: center;
-    color: white;
-    font-weight: lighter;
-    font-style: oblique;
   }
   
   /* Seccion 6 */
   
-  .seccion6 h1{
+  .seccion6 h2{
     font-size: 3.5rem;  
     color: #000;
     font-weight: lighter;
     font-style: oblique;
   }
   
-  .seccion6{
-    padding: 150px 0;
+  .seccion6 p{
+color: #000;
   }
   
   .fit-object6{
@@ -143,8 +136,66 @@ background: linear-gradient(90deg, rgba(34,13,16,1) 0%, rgba(113,41,51,1) 17%, r
     height: 100%;
   
   }
+
+  /* Seccion 7 */
+  .seccion7 {
+    background-image: url(../img/Wine4.jpeg);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+    padding: 50px 0 50px 0;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .seccion7 h2{
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-weight: bolder;
+    font-size: 6rem;
+    text-align: center;
+  }
+  
+
+
+/* Scroll top butoon */
+  .botonScrollTop{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #D2649A;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    }
+    
+
+
+
   /* Footer */
   
   footer{
     background-color: #742f37;
   }
+
+.emailForm{
+    width: 17rem;
+}
+
+.form__button {
+	background: #451a1f;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	color: white;
+
+}
+
+ .form__button:hover{
+    background-color: #fff;
+    color: #742f37
+ }

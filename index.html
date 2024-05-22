@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="css/index.css" />
     <title>Tarea #2</title>
   </head>
-  <body>
-    <header class="container-fluid seccion0 inicio0">
+  <body id="inicio">
+
+    <!-- NAV BAR -->
+    <header class="container-fluid seccion0 inicio0 fixed-top">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="main-inicio" href="index.html">Inicio</a>
+          <a class="main-inicio" href="#inicio">Inicio</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,13 +33,13 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link color-w" href="index.html">Historia</a>
+                <a class="nav-link color-w" href="#historia">Historia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link color-w" href="#">Proceso de Produccion</a>
+                <a class="nav-link color-w" href="#proceso">Proceso de Produccion</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link color-w" href="#">Localizanos</a>
+                <a class="nav-link color-w" href="#localizanos">Localizanos</a>
               </li>
             </ul>
             <span> À votre santé!</span>
@@ -46,11 +48,15 @@
       </div>
     </header>
 
+    <!-- Primer Titulo con imagen -->
+    <!-- Tenemos los mejores vinos que existen -->
     <section class="container-fluid seccion1">
       <div class="container">
         <h1>¡Tenemos los mejores vinos que existen!</h1>
       </div>
     </section>
+
+    <!-- Lista de Vinos disponibles -->
     <section class="container-fluid seccion2">
       <div class="container text-center">
         <div class="container">
@@ -172,50 +178,74 @@
       </div>
     </section>
 
-    <section class="container-fluid seccion3">
+    <!-- Segundo Titulo con imagen -->
+    <!-- La Historia del Vino -->
+    <section id="historia" class="container-fluid seccion3">
       <div class="container">
         <h2>La Historia del Vino</h2>
       </div>
     </section>
 
-    <section class="container-fluid seccion4">
+    <!-- Video de Youtube  -->
+    <section  class="container-fluid seccion4">
         <iframe class="responsive-iframe"  width="70%" height="415" src="https://www.youtube.com/embed/ydq5cnpGMtU?si=81iU2L0-l4xV5Owx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
 
-    <section class="container-fluid seccion5">
+    <!-- Tercer Titulo con imagen -->
+    <!-- La Historia del Vino -->
+    <section id="proceso" class="container-fluid seccion5">
       <div class="container">
-        <h2>Los mejores tours en Costa Rica</h2>
+        <h2>Proceso de produccion</h2>
       </div>
     </section>
 
+    <!-- Detalles sobre la produccion del Vino -->
     <section class="container-fluid seccion6">
-      <div class="pb-4"><h1>Clientes</h1></div>
-      <div class="container">
         <div class="row">
-          <!-- IMAGEN -->
-          <!-- IMAGEN -->
-          <div class="col-lg-6 col-md-6 mb-4">
-            <img class="fit-object6" src="img/cliente.jpg" alt="Cliente" />
+            <div class="col-md-6 col-lg-6 p-2">
+              <h2 class="display-3 fst-italic">Primera Parte</h2>
+              <p class="lead my-3">El proceso de producción del vino comienza en el viñedo, donde se cultivan las vides específicas para el tipo de uva deseada. Tras la cosecha en el momento óptimo de maduración, las uvas se despalillan y estrujan para extraer el jugo. Este mosto se somete a fermentación, donde las levaduras convierten los azúcares en alcohol. Después, el vino puede pasar por un proceso de envejecimiento en barricas de roble para desarrollar sus características únicas. Posteriormente, se clarifica, se estabiliza y se embotella para su distribución.</p>
+            </div>
+            <div class="col-md-6 col-lg-6 p-2">
+                <h2 class="display-3 fst-italic">Segunda Parte</h2>
+                <p class="lead my-3">Cada etapa del proceso, desde el cuidado de las vides hasta el embotellado, requiere precisión y atención para garantizar la calidad del vino final. Los productores trabajan arduamente para controlar factores como la temperatura, la fermentación y la manipulación del vino, buscando capturar y realzar los sabores naturales de las uvas, dando como resultado una amplia variedad de vinos con perfiles de sabor únicos y distintivos.</p>
+              </div>
           </div>
+    </section>
 
-          <!-- VIDEO -->
-          <!-- VIDEO -->
-          <div class="col-lg-6 col-md-6 mb-4">
-            <video
-              class="fit-object6"
-              src="vd/naturaleza.mp4"
-              width="645px"
-              autoplay
-            ></video>
-          </div>
-        </div>
+    <!-- Tercer Titulo con imagen -->
+    <!-- Localizanos -->
+    <section id="localizanos" class="container-fluid seccion7">
+      <div class="container">
+        <h2 class="pb-4">¡Localizanos!</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62873.21410971242!2d-84.16950264179684!3d9.969200100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5712bd0dfc5%3A0x3ffcabaf385d235e!2svino.cr!5e0!3m2!1sen!2scr!4v1716410864580!5m2!1sen!2scr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
+    <!-- SCROLLTOP BUTTON -->
+    <a href="#inicio">
+        <div class="botonScrollTop">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      </a>
+
+      <!-- FOOTER -->
     <footer>
       <div class="container py-3">
-        <div class="justify-content-between">
+
+        <div class="subscribe pb-5">
+            <h2>Suscribete</h2>
+            <div class="form">
+                <input type="email" class="emailForm" placeholder="Introduzca su correo electronico">
+                <button class="form__button">Enviar</button>
+            </div>
+            <div class="notice">
+                <input type="checkbox">
+                <span>Estoy de acuerdo de recibir correos informacionales sobre nuestros vinos.</span>
+            </div>
+        </div>
+        <div class="justify-content-between pt-5">
           <a href="https://facebook.com/" target="blank">
             <i class="fa-facebook fa-brands fa-3x redesSociales"></i>
           </a>
@@ -226,7 +256,9 @@
           <a href="https://twitter.com/" target="blank">
             <i class="fa-brands fa-square-twitter fa-3x redesSociales"></i>
           </a>
+
         </div>
+
         <hr />
         <p>Derechos Reservados 2024</p>
       </div>
